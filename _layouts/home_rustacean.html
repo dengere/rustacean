@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
   {%- if page.caption -%}
-    <h1 class="page-heading">{{ page.caption }}</h1>
+  <h1 class="page-heading">{{ page.caption }}</h1>
   {%- endif -%}
 
   {{ content }}
@@ -13,29 +13,30 @@ layout: default
 
   {%- if page.category == "anounce" -%}
 
-    {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
+  {%- if site.posts.size > 0 -%}
+  <ul class="post-list">
 
-      {%- for post in site.posts -%}
+    {%- for post in site.posts -%}
 
-      {%- if post.category == "anounce" -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endif -%}
-      {%- endfor -%}
-    </ul>
-    <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
+    {%- if post.category == "anounce" -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <!-- {%- if site.show_excerpts -%} -->
+      {{ post.excerpt }}
+      <!-- {%- endif -%} -->
+      <a class="page-link" href="{{ post.url | relative_url }}"> Devam...</a>
+    </li>
     {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
 
   {%- endif -%}
 
@@ -55,14 +56,15 @@ layout: default
         </a>
       </h3>
       {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
+      {{ post.excerpt }}
       {%- endif -%}
+      <a class="post-link" href="{{ post.url | relative_url }}"> Devam...</a>
     </li>
     {%- endif -%}
     {%- endfor -%}
-  </ul>  
+  </ul>
   {%- endif -%}
 
-{%- endif -%}
+  {%- endif -%}
 
 </div>

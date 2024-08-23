@@ -21,16 +21,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: rustacean
+email: dengere@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sağlam ve keskin bir Rustacean olmanın kolay yollarından birinin kendim ve eserlerim olmak olduğunu bilmek beni mutlu edecektir.
+  I will be happy to know that one of the easy ways to be a solid and sharp Rustacean is to be myself and my works.
 baseurl: /rustacean
 url: dengere.github.io
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+github_username:  dengere
+linkedin_username:  nuriyilmaztech
 show_excerpts: true
 
 # Build settings
