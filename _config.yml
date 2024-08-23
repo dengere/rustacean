@@ -1,5 +1,8 @@
 # Welcome to Jekyll!
 #
+# git commit -m "committing my jekyll theme"
+# git add --all
+# git push
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -28,6 +31,7 @@ baseurl: /rustacean
 url: dengere.github.io
 twitter_username: jekyllrb
 github_username:  jekyll
+show_excerpts: true
 
 # Build settings
 theme: minima
