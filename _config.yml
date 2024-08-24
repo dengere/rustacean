@@ -20,14 +20,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
+lang: tr-TR
 title: rust_yolu
 email: dengere@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kurslarımı, başlangıç seviyesinden uzmanlık düzeyine kadar adım adım ilerleyecek şekilde yapılandırmak için özen gösterdim. 
   Kursların seviyelere göre doğru adımlarla sıralanmasını ve her seviyedeki kursun konu akışını, bir yazılım geliştirici ve eğitmen olarak deneyimlerimle harmanlayarak hazırladım.
-  
-  Site hakkında soru ve önerileriniz varsa, GitHub depomda bir issue açarsanız memnun olurum. Kurslar hakkında bilgi almak için e-posta adresimi kullanmanızı rica ederim.
 baseurl: /rustacean # the subpath of your site, e.g. /blog
 # description: >- # this means to ignore newlines until "baseurl:"
 # baseurl: /rustacean # the subpath of your site, e.g. /blog
