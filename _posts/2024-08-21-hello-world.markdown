@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome Hey"
+title: Merhaba, Dunya!
 date:   2024-08-21 13:01:59 +0300
 excerpt: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. 
 category : anounce

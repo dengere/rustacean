@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Kimiz?
 permalink: /about/
 ---
 
