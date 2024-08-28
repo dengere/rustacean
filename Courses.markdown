@@ -1,7 +1,5 @@
 ---
-layout: home_rustacean
+layout: home_courses
 title: Kurslar
-caption: Kurslar
 permalink: /courses/
-category : "course"
 ---

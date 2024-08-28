@@ -1,0 +1,48 @@
+---
+layout: post
+title:  Rust Frontend -> WebAssembly ile Modern Web Geliştirme
+date:   2024-08-21 13:01:59 +0300
+category : course
+sortkey: 010201
+excerpt: _
+---
+
+
+#### 1. **Giriş**
+   - Rust ile Web Geliştirme: Temel Bilgiler
+   - Kursun Amacı ve Genel Yapısı
+
+#### 2. **Rust ile WebAssembly (WASM)**
+   - WebAssembly Nedir ve Neden Rust ile Kullanılır?
+   - Rust ile WebAssembly Kurulumu ve Ortam Hazırlığı
+   - Basit Bir Rust + WASM Projesi Oluşturma ve Çalıştırma
+
+#### 3. **Frontend Web Geliştirme Temelleri**
+   - HTML ve CSS: Temel Bilgiler ve Yapılar
+   - JavaScript Temelleri ve WebAssembly ile Entegrasyon
+
+#### 4. **Rust ile Web Frontend Geliştirme**
+   - Rust ile WebAssembly Kullanarak Dinamik Web İçeriği Oluşturma
+   - `yew` veya `stdweb` Kütüphanelerini Kullanarak Frontend Geliştirme
+   - HTML ve CSS ile Rust Kodunu Entegre Etme
+
+#### 5. **Rust ile Web API'leri Tüketme**
+   - HTTP İstekleri Yapma: `reqwest` Kütüphanesi
+   - REST API'leri ile Çalışma ve JSON Verileri Yönetme
+
+#### 6. **Performans ve Güvenlik**
+   - WebAssembly Performans Optimizasyonları
+   - Güvenlik En İyi Uygulamaları ve WebAssembly Güvenliği
+
+#### 7. **Test ve Hata Ayıklama**
+   - Rust Kodunun Test Edilmesi: Birim Testleri ve Entegrasyon Testleri
+   - WebAssembly Hata Ayıklama Teknikleri
+
+#### 8. **Proje ve Uygulama**
+   - Kapsamlı Bir Web Frontend Projesi: Tasarım ve Geliştirme
+   - Rust ve WebAssembly Kullanarak Tam Bir Web Uygulaması Oluşturma
+   - Proje Sunumu ve Geri Bildirim
+
+#### 9. **Kapanış ve Sonraki Adımlar**
+   - Kurs Özeti ve Öğrenilenler
+   - Rust ile Web Geliştirmede İleri Düzey Kaynaklar ve Araçlar

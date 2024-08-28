@@ -1,0 +1,42 @@
+---
+layout: post
+title:  Rust Backend -> Oturum Yönetimi ve Kimlik Doğrulama
+date:   2024-08-21 13:01:59 +0300
+category : course
+sortkey: 010103
+excerpt: _
+---
+
+#### 1. Kimlik Doğrulama (Authentication)
+- **JWT (JSON Web Token) Kullanımı**
+  - Rust'ta JWT ile Token Tabanlı Kimlik Doğrulama
+  - `jsonwebtoken` Kütüphanesi ile JWT Oluşturma ve Doğrulama
+- **OAuth2.0 ve OpenID Connect**
+  - Rust'ta OAuth2.0 Akışları
+  - OpenID Connect Entegrasyonu
+
+#### 2. Oturum Yönetimi ve Yetkilendirme (Authorization)
+- **Role-Based Access Control (RBAC)**
+  - Rust'ta Kullanıcı Rolleri ve Yetkilendirme Yönetimi
+  - RBAC Uygulama Senaryoları için `actix-web` ve `rocket` Kullanımı
+- **Session Management**
+  - Rust'ta Oturum Yönetimi ve Süre Yönetimi
+  - Secure Cookies ile Oturum Yönetimi (`cookie` Kütüphanesi)
+- **CSRF Koruması**
+  - Rust'ta CSRF Koruması Uygulamak (`csrf` Kütüphanesi)
+  - CSRF Tokenları Kullanımı
+
+#### 3. Güvenlik ve Şifreleme
+- **Veri Şifreleme Teknikleri**
+  - Rust'ta Symmetric ve Asymmetric Şifreleme (`ring` ve `rust-crypto` Kütüphaneleri)
+  - Veri Şifreleme ve Saklama Yöntemleri
+- **API Güvenliği**
+  - Rust ile API Güvenliği Uygulamak
+  - Rate Limiting ve Throttling (`actix-limiter`)
+  - Güvenli API Anahtarları (API Keys) ve HMAC Kullanımı
+
+#### 4. Uygulama ve Proje
+- **Güvenli Bir Oturum Yönetim Sistemi Geliştirme**
+  - Rust'ta JWT veya OAuth2.0 Kullanarak Kimlik Doğrulama ve Yetkilendirme Uygulaması
+  - CSRF ve Secure Cookies ile Güvenli Oturum Yönetimi
+  - Rust'ta Proje Planlama, Geliştirme ve Test Etme

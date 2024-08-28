@@ -21,7 +21,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: tr-TR
-title: rust_yolu
+title: rustacean
 email: dengere@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Kurslarımı, başlangıç seviyesinden uzmanlık düzeyine kadar adım adım ilerleyecek şekilde yapılandırmak için özen gösterdim. 

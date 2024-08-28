@@ -1,0 +1,118 @@
+--- 
+# Only the main Sass file needs front matter (the dashes are enough) 
+--- 
+
+@import "minima";
+
+// body {
+//     animation: backgroundchanger 120s linear infinite !important;
+// }
+
+.site-header {
+    border-top: 2px solid #312fa1;
+    border-bottom: 1px solid #e8e8e8 !important;
+    min-height: 55.95px;
+    position: relative;
+    animation: changeColor 20s linear infinite;
+    /* Renk değiştiren animasyon */
+}
+
+.anounce {
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: changeColor 5s linear infinite;
+}
+
+.anounce h2 {
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.anounce p {
+    color: #333;
+    font-size: 16px;
+}
+
+@keyframes changeColor {
+    0% {
+        border-color: #A8D5BA;
+    }
+
+    20% {
+        border-color: #F7CAC9;
+    }
+
+    40% {
+        border-color: #F6EAC2;
+    }
+
+    60% {
+        border-color: #B0D0D3;
+    }
+
+    80% {
+        border-color: #C4A7E7;
+    }
+
+    100% {
+        border-color: #A8D5BA;
+    }
+}
+
+
+@keyframes backgroundchanger {
+    0% {
+        background-color: #F5F7FA;
+        /* Açık Gri */
+    }
+
+    11% {
+        background-color: #FFEBEE;
+        /* Açık Pembe */
+    }
+
+    22% {
+        background-color: #FFF3E0;
+        /* Açık Turuncu */
+    }
+
+    33% {
+        background-color: #FFF9C4;
+        /* Açık Sarı */
+    }
+
+    44% {
+        background-color: #E8F5E9;
+        /* Açık Yeşil */
+    }
+
+    55% {
+        background-color: #E3F2FD;
+        /* Açık Mavi */
+    }
+
+    66% {
+        background-color: #F3E5F5;
+        /* Açık Mor */
+    }
+
+    77% {
+        background-color: #ECEFF1;
+        /* Açık Mavi Gri */
+    }
+
+    88% {
+        background-color: #FFECB3;
+        /* Açık Amber */
+    }
+
+    100% {
+        background-color: #F5F7FA;
+        /* Tekrar başlangıç rengine dön */
+    }
+}

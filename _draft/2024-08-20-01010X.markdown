@@ -1,0 +1,87 @@
+---
+layout: post
+title:  Rust 301 -> LeetCode ile Uygulamalı Problem Çözme
+date:   2024-08-21 13:01:59 +0300
+sortkey: 010101
+category : course
+---
+
+
+#### On Kosul
+Kursa daha once programlama dillerinden birisini bilen ve efektif bir bicimde kullanabilen ve/veya Rust ogrenmek icin calisan yazilim gelistirme ustalari katilabilir.
+
+#### Amac
+Kurs, Rust programlama dilinde yetkinlik kazanmak isteyen geliştiricilere temel bilgileri vermeyi amaçlar, geliştiricilerin güvenli ve verimli kod yazma yeteneği kazanmaları hedeflenmektedir.
+
+Kurs boyunca, Rust dilinin unsurları adım adım inceleyecek ve örneklerle bu bilgileri pekiştireceğiz. 
+
+Kurs sonunda katılımcılar, Rust’ın yapısal özelliklerini kavramış, bellek yönetimi ve sahiplik kavramlarını etkin bir şekilde kullanabilen ve fonksiyonel programlama tekniklerini Rust üzerinde uygulayabilen geliştiriciler olarak kendi projelerine katkı suknabileceklerdir.
+
+
+### Kurs Programı
+
+
+**Temel Rust Söz Dizimi ve "Hello, World!"** 
+- "Hello, World!"
+- Temel Söz Dizimi
+- Derleme Süreci
+Sure: 1 Saat
+
+**Değişkenler ve Veri Türleri**
+- Değişkenler, Immutable ve Mutable Kavramlari
+- Temel Veri Türleri
+- Sabitler
+- Shadowing
+Sure: 2 Saat
+
+**Fonksiyonlar ve Kapsam (Scope)**
+- Fonksiyon
+- Parametreler
+- Expression ve Statement ayrımı
+- Fonksiyondan Geri Dönüş ve Geri Dönüş Tipleri
+- Değişkenlerin Kapsamı ve Ömürleri
+Sure: 3 Saat
+
+**Kontrol Akışı**
+- If, Else If ve Else İfadeleri
+- Döngüler: Loop, While, For
+- Match İfadesi ile Kontrol Akışı
+- Kontrol Akışında Expression ve Statement
+Sure: 3 Saat
+
+**Bellek Yönetimi**
+- Bellek Yönetimi
+- "Ownership" Kavramı
+- Move Semantiği 
+- Copy Trait
+- Borrowing 
+- Referans
+- Mutable Referans 
+- Dangling Pointers
+- "Lifetime" Kavramı ve Yaşam Süresi İfadeleri
+Sure: 6 Saat
+
+**Veri Yapıları**
+- Diziler (Arrays) ve Vektörler (Vectors)
+- Tuples ve Structs (Yapılar)
+- Enums ve Pattern Matching ile Veri Modelleme
+- Option ve Result Türleri ile Güvenli Veri Yönetimi
+Sure: 6 Saat
+
+**Hata Yönetimi**
+- Result ve Option Türleri
+- Panic! ve Error Yönetimi
+- Hata Yakalama ve Yönetimi (Error Handling)
+- Hata Zincirleme (Error Chaining) ve `?` Operatörü
+Sure: 6 Saat
+
+**Fonksiyonel Programlama Yaklaşımları**
+- Iteratorlar ve Kapanışlar (Closures)
+- Map, Filter, ve Fold Fonksiyonları ile İşlevsel Programlama
+- Koleksiyonlar ve Fonksiyonel İşlemler
+Sure: 6 Saat
+
+**Modüler Yapı ve Kütüphane Kullanımı**
+- Modüller ve Crates
+- Dış Kütüphaneler ve Cargo ile Bağımlılık Yönetimi
+Sure: 3 Saat

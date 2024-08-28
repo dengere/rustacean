@@ -1,0 +1,79 @@
+---
+layout: post
+title:  Rust Backend -> Microservis Mimarisi ve Dağıtım
+date:   2024-08-21 13:01:59 +0300
+category : course
+sortkey: 010104
+excerpt: _
+---
+#### 1. Microservis Mimarisi ve Rust
+- **Microservis Mimarisi Nedir?**
+  - Monolitik ve Microservis Mimari Karşılaştırması
+  - Microservislerin Avantajları ve Zorlukları
+- **Rust ile Microservis Geliştirme**
+  - `actix-web` veya `warp` Kütüphaneleri ile Microservis Tabanlı API Geliştirme
+  - Microservisler Arasında İletişim (gRPC ve REST)
+  - Service Discovery ve Load Balancing
+
+#### 2. Containerization ve Orkestrasyon
+- **Containerization ile Uygulama Paketleme**
+  - Docker Kullanarak Rust Uygulamalarını Containerize Etme
+  - Dockerfile Yazımı ve Rust İmaj Optimizasyonu
+  - Container Networking ve Bağlantı Yönetimi
+- **Kubernetes ile Orkestrasyon**
+  - Rust Microservislerini Kubernetes Üzerinde Dağıtma
+  - Kubernetes ConfigMap ve Secrets Kullanımı
+  - Horizontal Pod Autoscaling (HPA) ve Monitoring
+
+#### 3. CI/CD (Continuous Integration / Continuous Deployment)
+- **CI/CD Süreçleri ve Rust**
+  - Rust Projeleri için CI/CD Pipeline Oluşturma (GitHub Actions, GitLab CI)
+  - Test, Build ve Deployment Otomasyonu
+- **Rust Uygulamaları için Dağıtım Stratejileri**
+  - Canary Deployment ve Blue-Green Deployment
+  - Rollback ve Versioning
+
+#### 4. Test Etme ve Loglama
+- **Unit Test ve Integration Test**
+  - Rust'ta Unit Test Yazımı (`cargo test`)
+  - Integration Testler ve Test Kapsamı
+  - CI Pipeline'ında Otomatik Test Koşma
+- **Loglama ve İzleme**
+  - `log` ve `env_logger` Kütüphaneleri ile Loglama
+  - Log Seviyeleri ve Yapılandırma
+  - Distribüye İzleme ve Monitoring Çözümleri (Prometheus, Grafana)
+
+#### 5. Hata Yönetimi ve Geri Kazanım
+- **Fallback ve Retry Mekanizmaları**
+  - `tower` ve `retry` Kütüphaneleri ile Otomatik Tekrar Deneme
+  - Circuit Breaker Deseni
+  - Hata Yönetimi ve Güvenli Geri Dönüşler (`Result` ve `Option` Kullanımı)
+
+#### 6. Observability (Gözlemlenebilirlik)
+- **Tracing**: `tracing` kütüphanesi ile performans izleme ve dağıtık sistemlerde request tracing.
+- **Metrics**: Uygulama metriklerinin toplanması ve izlenmesi (Prometheus entegrasyonu ile).
+
+#### 7. Event-Driven Architecture
+- **Mesaj Kuyrukları**: RabbitMQ, Kafka gibi mesajlaşma sistemleri ile mikroservisler arasında haberleşme.
+- **Event Sourcing ve CQRS**: Olay temelli veri yönetimi ve komut/sorgu sorumluluklarının ayrıştırılması.
+
+#### 8. Security
+- **Güvenli Kod Yazımı**: Rust'ın bellek güvenliği ve hata yönetimi özelliklerinden yararlanma.
+- **API Güvenliği**: Rate limiting, DDOS koruma stratejileri.
+
+#### 9. API Versioning ve Backward Compatibility
+- **API Sürümleme**: API’lerde backward compatibility’yi koruma yöntemleri ve farklı API versiyonlarının yönetimi.
+
+#### 10. Scalability
+- **Horizontal ve Vertical Scaling**: Rust uygulamalarının ölçeklenebilirliği için optimizasyonlar.
+- **Load Testing**: Microservislerin ölçeklenebilirliğini test etme araçları ve stratejileri (e.g., k6, locust).
+
+#### 11. Uygulama ve Proje
+- **Rust ile Tam Kapsamlı Microservis Projesi Geliştirme**
+  - Microservis Mimarisi ile Dağıtık Bir Uygulama Geliştirme
+  - Docker ve Kubernetes ile Orkestrasyon
+  - CI/CD Pipeline Kurulumu ve Otomatik Dağıtım
+  - Unit ve Integration Testlerin Eklenmesi
+  - Loglama, Fallback, Retry Mekanizmaları ve Tracing
+  - Proje Planlama, Geliştirme ve Test Etme
+  
