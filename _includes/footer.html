@@ -1,32 +1,18 @@
-<footer class="site-footer h-card">
-    <data class="u-url" href="{{ " /" | relative_url }}"></data>
+<footer class="py-5 mt-5 border-top bg-light fw-light text-normal fs-6">
+        <div class="container">
+                <p class="float-end mb-1">
+                        <a href="#" class="link-primary">Zirveye Yolculuk</a>
+                </p>
+                <p class="mb-1">Kaynak belirterek site icerigimizi istediginiz gibi kullanabilir, esinlenebilirsiniz. Icerikte degisiklik,
+                        degisikligi yapanin sorumlulugundadir.
+                </p>
+                <!-- <p><a class="link-primary" href="{{ " /" | relative_url }}">Rustacean</a> dengere@gmail.com</p> -->
+                <p class="mb-0">
+                        Sitemizin hazirlansinmada katkisi olan <a href="https://getbootstrap.com/"
+                                class="link-success">Bootstrap</a>,
+                        <a href="https://jekyllrb.com/" class="link-success">jekyll</a>'a ve yer saglayan <a
+                                href="https://github.com" class="link-success">github</a>'a tesekkur ederiz.
+                </p>
 
-    <div class="wrapper">
-
-        <h2 class="footer-heading">&nbsp;</h2>
-
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-1">
-                <ul class="contact-list">
-                    {%- if site.email -%}
-                    <li>
-                        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-                    </li>
-                    {%- endif -%}
-                </ul>
-            </div>
-
-            <div class="footer-col footer-col-2">
-                {%- include social.html -%}
-            </div>
-
-            <div class="footer-col footer-col-3">
-                <p>{{- site.description | escape -}}</p>
-                <p>rust_yolu hakkında soru ve önerileriniz icin <a class="u-email" href="https://github.com/dengere/rustacean"><b>GitHub depomda</b></a> bir issue açın. </p>
-                <p>Kurslar hakkında sorulariniz ve bilgi almak için adresim <a class="u-email" href="mailto:{{ site.email }}"><b>{{ site.email }}</b></a>.</P>
-            </div>
         </div>
-
-    </div>
-
 </footer>

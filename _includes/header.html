@@ -1,8 +1,71 @@
-<header class="site-header"  role="banner">
-    <div class="wrapper">
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths -%}
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-        <a class="site-title" style="float: right;" rel="author" href="{{ site.baseurl }}/courses/">kurslar</a>
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>Ne iş?</h4>
+          <p class="text-body-secondary">Rust Gele, yazılım mimarisi, geliştirme ve uzman yetistirme alanlarında uzun yıllara dayanan deneyime sahip bir ekip tarafından hazırlanmış bir egitim programidir. Bu  egitim programi, Rust programlama dilinin temellerinden başlayarak, CQRS-ES, EDA, SOA, Serverless gibi mimari basliklari, web, mobil, blockchain gibi güncel teknolojileri ve Rust ile ilgili bir cok alani kapsayan bir yelpazeye sahiptir. Kurs katilimcilari ve uzmanlarimizin gorus ve onerileriyle zaman icerisinde guncellenir, degisir, gelisir... Sizi de aramiza bekleriz.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Erisim?</h4>
+          <p class="text-body-secondary">Bize nasıl ulaşacağınızı bildiğinizi düşünüyoruz. Gerektiginde e-posta adresimiz: dengere@gmail.com</p>
+          <!-- <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul> -->
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="{{ "/" | relative_url }}" class="navbar-brand d-flex align-items-center">
+        <svg fill="#fff" height="48" width="48" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M401.729,280.092C463.195,276.162,512,224.914,512,162.473h-15.193c0,54.17-42.168,98.672-95.401,102.416
+           c-1.489-15.435-8.168-29.365-18.258-40.046c12.445-15.092,16.56-31.235,17.914-40.27c31.876-3.465,56.771-30.535,56.771-63.317
+           c0-35.124-28.576-63.7-63.7-63.7h-7.597v56.103h-56.104v7.597c0,32.266,24.12,58.987,55.273,63.126
+           c-1.348,7.353-4.889,19.337-14.141,30.631c-10.814-7.263-23.815-11.508-37.791-11.508h-33.044v-16.412
+           c9.74-3.202,16.795-12.378,16.795-23.175c0-13.45-10.942-24.393-24.392-24.393c-13.45,0-24.393,10.942-24.393,24.393
+           c0,10.798,7.055,19.974,16.796,23.175v16.413h-59.068v-16.413c9.741-3.201,16.796-12.377,16.796-23.175
+           c0-13.45-10.942-24.393-24.393-24.393c-13.449,0-24.392,10.942-24.392,24.393c0,10.797,7.055,19.973,16.795,23.175v16.413H178.23
+           c-13.974,0-26.974,4.243-37.786,11.503c-9.162-11.222-12.727-23.247-14.107-30.632c31.133-4.157,55.232-30.869,55.232-63.121
+           v-7.597h-56.104V57.557h-7.597c-35.124,0-63.7,28.576-63.7,63.7c0,32.784,24.896,59.853,56.773,63.317
+           c1.354,9.034,5.469,25.177,17.913,40.268c-10.09,10.681-16.771,24.611-18.258,40.047c-53.234-3.744-95.402-48.245-95.402-102.416
+           H0c0,62.441,48.807,113.689,110.271,117.619v13.173H7.597v15.193h102.674v14.843c-43.971,3.861-78.58,40.866-78.58,85.823h15.193
+           c0-36.608,27.858-66.827,63.485-70.585c2.465,64.329,55.559,115.905,120.479,115.905h50.301
+           c64.922,0,118.015-51.576,120.479-115.905c35.628,3.758,63.485,33.977,63.485,70.585h15.193c0-44.956-34.609-81.962-78.58-85.823
+           v-14.843h102.674v-15.193H401.729V280.092z M346.219,128.854h55.51V73.345c23.15,3.658,40.91,23.75,40.91,47.912
+           c0,26.747-21.759,48.508-48.507,48.508C369.969,169.765,349.876,152.005,346.219,128.854z M69.362,121.257
+           c0-24.162,17.759-44.255,40.91-47.912v55.509h55.51c-3.657,23.151-23.749,40.911-47.913,40.911
+           C91.121,169.765,69.362,148.004,69.362,121.257z M283.932,163.919c0-5.073,4.128-9.199,9.199-9.199
+           c5.072,0,9.198,4.127,9.198,9.199s-4.127,9.199-9.198,9.199C288.058,173.119,283.932,168.992,283.932,163.919z M209.671,163.919
+           c0-5.073,4.127-9.199,9.198-9.199c5.073,0,9.199,4.127,9.199,9.199s-4.127,9.199-9.199,9.199
+           C213.798,173.119,209.671,168.992,209.671,163.919z M386.536,333.867h-0.001c0,58.11-47.276,105.385-105.385,105.385H230.85
+           c-58.109,0-105.385-47.275-105.385-105.385v-62.404c0-29.093,23.669-52.763,52.764-52.763h155.544
+           c29.094,0,52.764,23.669,52.764,52.763V333.867z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M286.684,408.663c-1.826,0.134-3.688,0.202-5.533,0.202H230.85v15.193h50.301c2.214,0,4.45-0.082,6.644-0.242
+           L286.684,408.663z" />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path d="M356.149,333.867c-0.001,32.38-20.669,60.996-51.431,71.207l4.786,14.42c36.988-12.276,61.839-46.687,61.839-85.626
+           H356.149z" />
+            </g>
+          </g>
+        </svg>
+        <span class="px-2"><strong>Rust</strong> Gele</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+        aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
 </header>

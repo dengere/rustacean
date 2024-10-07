@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="container py-3">
+    <div class="row py-5">
+        <div class="col">
+            <a class="fw-bold link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                href="{{ page.subject_permalink | relative_url }}">{{ page.subject | escape }} ::</a>
+            <ul class="list-unstyled fs-6">
+                {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+                {%- for post in pages -%}
+                {%- if post.topic == page.topic -%}
+                {%- if post.title != page.title -%}
+                <li class="pb-2">
+                    <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        href="{{ post.url | relative_url }}">{{ post.title | escape }} »</a>
+                </li>
+                {%- else -%}
+                <li class="pb-2 display-5 fw-bold text-body-emphasis">
+                    {{ post.title | escape }}
+                </li>
+                {%- endif -%}
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 col-md-5 fw-light">
+            <div class="pb-3 lead fw-semibold">{{ page.excerpt }}</div>
+            <div class="pb-3">{{ page.overview }}</div>
+
+            <!-- Hedefler -->
+            <div class="pb-3">
+                <dt class="fw-bold">Hedefler</dt>
+                Bu kursun sonunda katılımcı:
+                <ul>
+
+                    {%- for subject in page.goals -%}
+
+                    <li>{{ subject | escape }}</li>
+
+                    {%- endfor -%}
+
+                </ul>
+            </div>
+
+            <!-- Katilimci Profili -->
+            <div class="pb-3">
+                <dt class="fw-bold">Katılımcı Profili</dt>
+                <ul>
+
+                    {%- for subject in page.audiances -%}
+
+                    <li>{{ subject | escape }}</li>
+
+                    {%- endfor -%}
+
+                </ul>
+            </div>
+
+            <div class="pb-3">
+                <dt class="fw-bold">Yöntem</dt>
+                <ul>
+                    <li>Etkileşimli ders ve tartışmalar.</li>
+                    <li>Pratik alıştırma ve projeler.</li>
+                </ul>
+            </div>
+
+            <div class="pb-3">
+                <dt class="fw-bold">Gerekenler</dt>
+                <ul>
+                    <li>Online toplanti icin gerekli ortam.</li>
+                    <li>VS Code.</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-sm-8 offset-md-1 col-md-6 fw-light">
+            <h4 class="pb-3 fw-bold">Kurs İçeriği</h4>
+            <div class="fw-light list-unstyled">{{ content }}</div>
+            <div class="pb-3">Konu başlıkları yukarıda listelenmiştir, ancak eğitim sırasında konuların sıralaması
+                eğitmenin takdirine bağlı olarak değiştirilebilir.</div>
+            <div>
+                Kursun süresi yaklaşık <strong>{{ page.period }} saat</strong> planlanmıştır. Bu süre, katılımcıların
+                hızına ve ihtiyaçlarına göre esneklik gösterebilir.
+            </div>
+        </div>
+    </div>
+
+</div>

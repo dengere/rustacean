@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% assign homecourses = site.pages | where: "layout", "homecourse" | sort: 'sortorder' %}
+{% assign courses = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+
+{%- for homecourse in homecourses -%}
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-8 col-md-7 py-4 lead">
+      <h1 class="display-5 fw-bold text-body-emphasis">{{ homecourse.title | escape }}</h1>
+      {{ homecourse.excerpt }} <a href="{{ homecourse.url | relative_url }}"
+        class="fw-bold link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Devami... »</a>
+    </div>
+    <div class="col-sm-4 offset-md-1 py-4">
+      <ul class="list-unstyled">
+        {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+        {%- for post in pages -%}
+        {%- if post.topic == homecourse.topic -%}
+        <li class="pb-2"><a
+            class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            href="{{ post.url | relative_url }}">{{ post.title | escape }} »</a>
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{%- endfor -%}

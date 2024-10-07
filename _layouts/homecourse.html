@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-8 col-md-7 py-4 lead fw-light">
+      <h1 class="display-5 fw-bold text-body-emphasis">{{ page.title | escape }}</h1>
+      <p class="pb-3 fw-normal">{{page.excerpt}}</p>
+      <p class="pb-3">{{page.info}}</p>
+      <div class="fw-light">{{ content }}</div>
+    </div>
+    <div class="col-sm-4 offset-md-1 py-4 ">
+      <h4 class="text-body-emphasis">Kurslar</h1>
+        <ul class="list-unstyled fw-light">
+
+          {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+          {%- for post in pages -%}
+          {%- if post.topic == page.topic -%}
+
+          <li class="pb-2">
+            <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              href="{{ post.url | relative_url }}">{{ post.title | escape }} »</a>
+          </li>
+
+          {%- endif -%}
+          {%- endfor -%}
+
+        </ul>
+    </div>
+  </div>
+</div>

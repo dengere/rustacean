@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'tr' }}">
+
+{%- include head.html -%}
+
+<body class="fs-5 fw-normal">
+
+  {%- include header.html -%}
+
+  {%- if page.documentstate == 0 -%}
+  {%- include draft.html -%}
+  {%- endif -%}
+  
+  <main>
+    {{ content }}
+  </main>
+
+  {%- include footer.html -%}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
