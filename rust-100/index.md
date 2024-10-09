@@ -2,10 +2,10 @@
 layout: homecourse
 topic: Rust-100
 title: Rust'in Temelleri
-permalink: /Rust-100/
+permalink: /rust-100/
 documentstate: 1
 excerpt: >- 
-    Bu kurs serisi, Rust dilinin güçlü yönlerini öğrenmenizi ve bu özellikleri kullanarak etkili programlar geliştirmenizi sağlar. Programlama temellerinden başlayarak, eşzamanlı ve paralel programlama gibi ileri tekniklerle çalışmayı kapsar.
+    Katılımcılara Rust programlama dilini adım adım öğreten bir dizi kurs içerir. Teori ve uygulama dengesiyle hazırlanan bu eğitim dizisi, Rust dilini projelerinde kullanmak isteyenler için hazırlanmıştır.
 sortorder: 100
 info: >- 
     Seri temel programlama konularını öğrenmenizi ve ardından daha gelişmiş yöntemlerle Rust dilini etkili bir şekilde kullanmanızı sağlar. İlk kurs (Rust 101) dilin yapı taşlarını ve ana kavramlarını işlerken, ikinci kurs (Rust 102) bellek yönetimi ve fonksiyonel programlama yer alir. Üçüncü kurs (Rust 201) ise eşzamanlılık ve paralel işlemeye yönelik performanslı uygulamalar geliştirmeyi hedefler. 

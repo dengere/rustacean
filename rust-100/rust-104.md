@@ -4,7 +4,7 @@ topic: Rust-100
 subject: Rust'in Temelleri
 subject_permalink: /rust-100/
 title: Paralel Programlama (Parallelism)
-permalink: /Rust-104/
+permalink: /rust-104/
 category: course
 sortorder: 400
 excerpt: >-
@@ -32,25 +32,57 @@ requirements:
     - VS Code
 period: 30
 ---
-##### Giriş  
-   - Paralellik ve eşzamanlılık farkı  
-   - Temel kavramlar  
 
-##### Thread Yönetimi ve Görev Dağılımı  
-   - `std::thread::spawn` ile paralel iş parçacıkları  
-   - Görevlerin bölümlendirilmesi (Chunking, Striding)  
+# Giriş
+   - *Paralellik ve Eşzamanlılık Farkı*
+     - Paralel programlama ve eşzamanlılık (Concurrency) kavramlarının tanımı
+     - Her iki paradigmanın avantajları, dezavantajları ve kullanım alanları
+   - *Temel Kavramlar*
+     - Thread, işlem (process), ve görev (task) arasındaki farklar
+     - CPU, çekirdek ve multi-core işlemciler hakkında bilgi
+     - Paralel programlama modelleri ve frameworkler hakkında genel bakış
 
-##### Veri Paylaşımı ve Senkronizasyon  
-   - `Arc`, `Mutex`, ve atomik işlemler  
+# Thread Yönetimi ve Görev Dağılımı
+   - *`std::thread::spawn` ile Paralel İş Parçacıkları*
+     - thread’ler nasıl başlatılır ve yönetilir
+     - `std::thread::spawn` ile iş parçacıklarının başlatılması
+     - Thread'lerin yaşam döngüsü ve kaynak yönetimi
+   - *Görevlerin Bölümlendirilmesi (Chunking, Striding)*
+     - Görevlerin verimli bir şekilde bölümlendirilmesi (chunking) teknikleri
+     - Striding ile görevlerin iş parçacıklarına dağıtılması
+     - Paralel görev dağılımı stratejileri
 
-##### Performans Optimizasyonu  
-   - Cache mimarisi ve CPU performansı optimizasyonları  
+# Veri Paylaşımı ve Senkronizasyon
+   - *`Arc`, `Mutex`, ve Atomik İşlemler*
+     - `Arc` ve `Mutex` kullanarak veri paylaşımı ve senkronizasyon
+     - Paralel iş parçacıkları arasında veri tutarlılığı sağlama
+     - Atomik işlemler ve veri yarışını önleme yöntemleri
+     - Performans üzerinde `Arc` ve `Mutex`’in etkileri
 
-##### Paralel Programlamada Senkronizasyon Sorunları  
-   - Deadlock ve race condition sorunlarını önleme  
+# Performans Optimizasyonu
+   - *Cache Mimarisi ve CPU Performansı Optimizasyonları*
+     - CPU cache yapısı, bellek hiyerarşisi ve performans üzerindeki etkileri
+     - Cache dostu algoritmalar geliştirme
+     - Paralel programlamada bellek erişimi ve veri yerleşiminin optimizasyonu
+   - *İş Parçacıkları Arasında Yük Dengeleme*
+     - İş parçacıkları arasında görevlerin adil şekilde dağıtılması
+     - Yük dengesizliğinin performansa etkisi ve çözüm yolları
 
-##### Paralel Kodların Test Edilmesi ve Debugging  
-   - Paralel kod testleri ve performans analiz araçları  
+# Paralel Programlamada Senkronizasyon Sorunları
+   - *Deadlock ve Race Condition Sorunlarını Önleme*
+     - Deadlock nedir ve nasıl oluşur?
+     - Deadlock önleme ve tespit etme teknikleri
+     - Race condition problemlerini tespit etme ve çözme
+     - Senkronizasyon hatalarından kaçınma yöntemleri
+   - *Lock-Free ve Wait-Free Algoritmalar*
+     - Lock-free ve wait-free algoritmaların avantajları ve kullanım alanları
+     - Veri yarışını engelleyen algoritmalar geliştirme teknikleri
 
-##### Proje Çalışması  
-   - Paralel hesaplama gerektiren bir proje geliştirme
+# Paralel Kodların Test Edilmesi ve Debugging
+   - *Paralel Kod Testleri ve Performans Analiz Araçları*
+     - Paralel programların test edilmesinde karşılaşılan zorluklar
+     - Unit test ve entegrasyon testlerinin paralel programlar için uygulanması
+     - Performans analiz araçları kullanarak darboğazları tespit etme
+   - *Debugging Teknikleri*
+     - Paralel kodların debugging süreçleri ve araçlar
+     - Thread’ler arası hataları tespit etme teknikleri

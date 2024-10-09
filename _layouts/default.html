@@ -3,17 +3,20 @@
 
 {%- include head.html -%}
 
-<body class="fs-5 fw-normal">
+<body>
 
   {%- include header.html -%}
 
   {%- if page.documentstate == 0 -%}
   {%- include draft.html -%}
   {%- endif -%}
-  
-  <main>
-    {{ content }}
-  </main>
+  <div class="container mt-5 my-md-4">
+    <main>
+      <div class="ps-lg-2">
+        {{ content }}
+      </div>
+    </main>
+  </div>
 
   {%- include footer.html -%}
 

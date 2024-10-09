@@ -1,6 +1,54 @@
----
-# only need it lines.
----
+--- 
+# only need it lines. 
+--- 
+
+
+.container {
+  max-width: 960px;
+}
+
+.course_content>h1 {
+  color: var(--bs-success);
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.bd-content>h3 {
+  margin-top: 2rem;
+}
+
+.bd-content>h4 {
+  margin-top: 1.5rem;
+}
+
+.anchor-link {
+  padding: 0 .175rem;
+  font-weight: 400;
+  color: rgba(13, 110, 253, 0.5);
+  text-decoration: none;
+  opacity: 0;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anchor-link {
+    transition: none
+  }
+}
+
+.anchor-link::after {
+  content: "#"
+}
+
+.anchor-link:focus,
+.anchor-link:hover,
+:hover>.anchor-link,
+:target>.anchor-link {
+  color: #0d6efd;
+  text-decoration: none;
+  opacity: 1
+}
+
 
 
 .bd-placeholder-img {
@@ -11,6 +59,22 @@
   user-select: none;
 }
 
+.bd-lead {
+  font-size: calc(1.275rem + .3vw);
+  font-weight: 300;
+}
+
+.bd-title {
+  --bs-heading-color: var(--bs-emphasis-color);
+  font-size: calc(1.425rem + 2.1vw);
+}
+
+.bd-navbar {
+  padding: .75rem 0;
+  background-color: transparent;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
@@ -18,8 +82,8 @@
 }
 
 .b-example-divider {
-  width: 100%;
-  height: 3rem;
+  width: 8%;
+  height: 0.2rem;
   background-color: rgba(0, 0, 0, .1);
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
