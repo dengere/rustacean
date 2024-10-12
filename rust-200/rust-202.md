@@ -29,7 +29,7 @@ methodology:
     - Ders saatleri dışında etkileşimli ödevler ve ödev tartışmaları.
 ---
 
-#### Temel Kavramlar
+##### Temel Kavramlar
 - ***Rust ile Veri Tabanı Uygulamaları Geliştirme***
   - Rust'ta veri tabanı yönetiminin önemi
   - Veri tabanlarına erişim ve yönetim için Rust araçları
@@ -37,7 +37,7 @@ methodology:
   - ORM kullanımının avantajları ve dezavantajları
   - Rust'ta popüler ORM araçları (Diesel, SeaORM, etc.)
 
-#### SQL Entegrasyonu
+##### SQL Entegrasyonu
 - ***Diesel ile Veri Tabanı Entegrasyonu***
   - Diesel ORM'in kurulumu ve kullanımı
   - ORM modelleme ve veri tabanı tablolarının yönetimi
@@ -45,19 +45,19 @@ methodology:
   - CRUD işlemleri
   - Transaction yönetimi
 
-#### NoSQL Entegrasyonu
+##### NoSQL Entegrasyonu
 - ***Rust ile MongoDB Bağlantısı***
   - MongoDB ile CRUD işlemleri
   - Rust üzerinden veri modelleme ve yönetim
 
-#### ORM ile Veri Tabanı Yönetimi
+##### ORM ile Veri Tabanı Yönetimi
 - ***SQL ve NoSQL Geçişleri***
   - ORM ile veri modellerini SQL ve NoSQL arasında yönlendirme
 - ***Repository Pattern ile Veri Tabanı Yönetimi***
   - Katmanlı mimari ve veri erişim katmanı
   - Servis katmanı ile veri yönetimi
 
-#### Güvenlik ve Test
+##### Güvenlik ve Test
 - ***Rust ile Veri Güvenliği***
   - Şifreleme ve erişim yönetimi stratejileri
 - ***Test ve Hata Ayıklama***
