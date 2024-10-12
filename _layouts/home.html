@@ -2,31 +2,49 @@
 layout: default
 ---
 
-<div class="py-2">
-    <h1 class="text-dark-emphasis"><strong>Rust</strong>gele ile işiniz rast gider</h2>
-        <p class="lead text-dark-emphasis fw-semibold">Rust ile programlama dünyasında girin! Eğitim serilerimiz, hem yeni başlayanlar
-            hem de deneyimli yazılımcılar için Rust dilini öğrenmenin ve uygulamanın en etkili yolunu sunuyor. </p>
-</div>
+<h1 class="text-body-emphasis pt-3"> <a class="h2 icon-link  mb-2" 
+    href="{{ "about/" | relative_url }}" />
+    <i class="bi bi-arrow-right-circle pb-4"></i></a>
+    Rust ile programlayın!
+</h1>
+<p class="fs-5 col-md-8 pt-3"> Eğitim serilerimiz, hem yeni başlayanlar hem de deneyimli yazılımcılar için Rust programlama
+    dilini öğrenmenin ve uygulamanın en etkili yolunu sunuyor. </p>
+
+<hr class="col-3 col-md-2 mb-5">
+
+
 
 {% assign homecourses = site.pages | where: "layout", "homecourse" | sort: 'sortorder' %}
 {% assign courses = site.pages | where: "layout", "course" | sort: 'sortorder' %}
 
-<div class="bd-content">
-    {%- for homecourse in homecourses -%}
-    <h3 class="text-dark-emphasis">{{ homecourse.title | escape }}</h3>
-    <p>{{ homecourse.excerpt }}
-        <!-- <a href="{{ homecourse.url | relative_url }}">Detayli bilgi...</a> -->
-    </p>
-    <ul>
-        {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
-        {%- for post in pages -%}
-        {%- if post.topic == homecourse.topic -%}
 
-        <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-        {%- endif -%}
-        {%- endfor -%}
-    </ul>
+<div class="row g-5">
+    {%- for homecourse in homecourses -%}
+    <div class="col-md-6">
+
+        <h2 class="text-body-emphasis">
+
+            <a class="icon-link link-underline-opacity-25 link-underline-dark mb-2"
+                href="{{ homecourse.url | relative_url }}">
+                <i class="bi bi-arrow-right-circle pb-4"></i>
+            </a>
+            {{ homecourse.title | escape }}
+        </h2>
+        <p> {{ homecourse.excerpt }}
+        </p>
+        <ul class="list-unstyled ps-0">
+            {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+            {%- for post in pages -%}
+            {%- if post.topic == homecourse.topic -%}
+            <li>
+                <a class="icon-link mb-2" href="{{ post.url | relative_url }}">
+                    <i class="bi bi-arrow-right-circle-fill pb-4"></i>
+                    {{ post.title | escape }}
+                </a>
+            </li>
+            {%- endif -%}
+            {%- endfor -%}
+        </ul>
+    </div>
     {%- endfor -%}
 </div>

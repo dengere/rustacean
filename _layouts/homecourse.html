@@ -1,56 +1,33 @@
 ---
 layout: default
 ---
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Hidden brand</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+
+<h1 class="text-body-emphasis">{{ page.title | escape }}</h1>
+<p class="text-success">{{ page.title | escape }}, <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> kurs serilerinden birisidir.
+</p>
+<div class="col-md-8">
+  <p class="fs-4"> {{page.excerpt}} </p>
+</div>
+<hr class="col-3 col-md-2 mb-5">
+
+<div class="row g-5">
+  <p> {{page.info}} </p>
+  <div class="fw-light">{{ content }}</div>
+</div>
+
+<div class="row g-5">
+  {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
+  {%- for post in pages -%}
+  {%- if post.topic == page.topic -%}
+  <div class="col-md-6">
+    <h2 class="text-body-emphasis">
+      <a class="icon-link link-underline-opacity-25 link-underline-dark mb-2" href="{{ post.url | relative_url }}"><i
+          class="bi bi-arrow-right-circle pb-4"></i> </a>
+      {{ post.title | escape }}
+    </h2>
+    <p> {{ post.excerpt }} </p>
   </div>
-</nav>
-<div class="container py-5">
-  <div class="row">
-    <div class="col-sm-8 col-md-7 py-4 lead fw-light">
-      <h1 class="display-5 fw-bold text-body-emphasis">{{ page.title | escape }}</h1>
-      <p class="pb-3 fw-normal">{{page.excerpt}}</p>
-      <p class="pb-3">{{page.info}}</p>
-      <div class="fw-light">{{ content }}</div>
-    </div>
-    <div class="col-sm-4 offset-md-1 py-4 ">
-      <h4 class="text-body-emphasis">Kurslar</h1>
-        <ul class="list-unstyled fw-light">
+  {%- endif -%}
+  {%- endfor -%}
 
-          {% assign pages = site.pages | where: "layout", "course" | sort: 'sortorder' %}
-          {%- for post in pages -%}
-          {%- if post.topic == page.topic -%}
-
-          <li class="pb-2">
-            <a class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              href="{{ post.url | relative_url }}">{{ post.title | escape }} »</a>
-          </li>
-
-          {%- endif -%}
-          {%- endfor -%}
-
-        </ul>
-    </div>
-  </div>
 </div>

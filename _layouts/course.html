@@ -1,57 +1,57 @@
 ---
 layout: default
 ---
-<div class="py-2">
-    <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.excerpt}}</p>
-    <p>{{ page.overview }}</p>
+
+<h1 class="text-body-emphasis">{{ page.title | escape }}</h1>
+<p class="text-success">{{ page.title | escape }}, <a href="{{ page.subject_permalink | relative_url }}">{{ page.subject | escape }}</a> serisinin bir kursudur.</p>
+
+<div class="col-md-10">
+    <p class="fs-4"> {{page.excerpt}} </p>
 </div>
+<hr class="col-3 col-md-2 mb-3">
 
-<div class="bd-content">
+<p class="col-md-10 mb-3"> {{page.overview}} </p>
 
+<div class="row g-5">
     <!-- Hedefler -->
-    <h4>Hedefler</h4>
-    Bu kursun sonunda katılımcı:
-    <ul>
-        {%- for subject in page.goals -%}
-        <li>{{ subject | escape }}</li>
-        {%- endfor -%}
-    </ul>
+    <div class="col-md-6 text-body-emphasis">
 
-    <h4>Katılımcı Profili</h4>
-    <ul>
-        {%- for subject in page.audiances -%}
-        <li>{{ subject | escape }}</li>
-        {%- endfor -%}
-    </ul>
+        <h2>Hedefler</h2>
+        <p>Bu kursun sonunda katılımcı</p>
+        <ul>
+            {%- for subject in page.goals -%}
+            <li>{{ subject | escape }}</li>
+            {%- endfor -%}
+        </ul>
+        <h2>Katılımcı Profili</h2>
+        <ul>
+            {%- for subject in page.audiances -%}
+            <li>{{ subject | escape }}</li>
+            {%- endfor -%}
+        </ul>
+        <h2>Sure ve Format</h2>
+        <ul>
+            {%- for subject in page.methodology -%}
+            <li>{{ subject | escape }}</li>
+            {%- endfor -%}
+            
+        </ul>
+        <p>Kursun süresi, katılımcıların hızına ve ihtiyaçlarına göre esneklik gösterebilir.</p>
+        {%- if page.warning -%}
+        <h2>Uyarılar</h2>
+        <p>{{ page.warning }}</p>
+        {%- endif -%}
+        <p>Kurs konu başlıkları listelenmiştir, ancak eğitim sırasında konuların sıralaması eğitmenin takdirine bağlı olarak değiştirilebilir.</p>
+        
 
-    <h4>Kurs İçeriği</h4>
-    <hr />
-    <div class="course_content">
-        {{ content }}
+
     </div>
-    <p>Baslik sonunda  yer alan (*) konunun giris duzeyininde islendigini gosterir.</p>
-    <hr />
-
-    <h4>Yöntem</h4>
-    <ul>
-        <li>Etkileşimli ders ve tartışmalar.</li>
-        <li>Pratik alıştırma ve projeler.</li>
-    </ul>
-
-    <h4>Gerekenler</h4>
-    <ul>
-        <li>Online toplanti icin gerekli ortam.</li>
-        <li>VS Code.</li>
-    </ul>
-
-    <h4>Notlar</h4>
-    <ul>
-        <li>Konu başlıkları yukarıda listelenmiştir, ancak eğitim sırasında konuların sıralaması
-            eğitmenin takdirine bağlı olarak değiştirilebilir.</li>
-        <li> Kursun süresi yaklaşık <strong>{{ page.period }} saat</strong> planlanmıştır. Bu süre, katılımcıların
-            hızına ve ihtiyaçlarına göre esneklik gösterebilir
-        </li>
-    </ul>
-
+    <div class="col-md-6 text-body-emphasis">
+        <h2>Kurs Konuları</h2>
+        {{ content }}
+        <p>Baslik sonunda yer alan (*) konunun giris duzeyininde islendigini gosterir.</p>
+    </div>
 </div>
+
+<hr class="col-3 col-md-2 my-3">
+

@@ -2,7 +2,7 @@
 layout: course
 topic: rust-200
 title: Oturum Yonetimi, Kimlik Dogrulama
-period: 18
+period: 9
 subject: Rust Backend
 subject_permalink: /rust-200/
 permalink: /Rust-203/
@@ -19,38 +19,38 @@ goals:
     - Güvenli uygulamalar oluşturmak için gerekli en iyi uygulamaları ve yaygın güvenlik açıklarını öğrenerek, yazılımlarını güvenli hale getirme becerisi kazanacaklardır.
     - Gerçek dünya senaryolarında uygulama geliştirme deneyimi kazanarak, katılımcılar, öğrendiklerini pratikte uygulayabilecekleri proje örnekleri üzerinde çalışma fırsatı bulacaklardır.
 sortorder: 300
-documentstate: 0
+documentstate: 1
+methodology:
+    - 30 saat,
+    - 3'ser saatlik oturumlar ile 5 hafta,
+    - Online ve
+    - Ders saatleri dışında etkileşimli ödevler ve ödev tartışmaları.
 ---
 
-# Temel Kavramlar
-   - Oturum Yönetimi ve Kimlik Doğrulama Nedir?
-   - Oturum ve Kimlik Doğrulamanın Önemi
+#### Temel Kavramlar
+   - Oturum Yönetimi
+   - Kimlik Doğrulama
 
-# Kimlik Doğrulama Yöntemleri
+#### Kimlik Doğrulama Yöntemleri
    - Temel Kimlik Doğrulama (Username ve Password)
    - Token Tabanlı Kimlik Doğrulama (JWT, OAuth)
    - Çok Faktörlü Kimlik Doğrulama
    - API Kimlik Doğrulama (Key/Secret Yöntemi ve HMAC)
 
-# Oturum Yönetimi
-   - Oturum Nedir?
+#### Oturum Yönetimi
    - Oturum Bilgilerinin Saklanması
-   - Oturum Süresi ve Yenileme
-   - Oturum Sonlandırma
+   - Süre ve Yenileme
+   - Sonlandırma
+   - *Güvenlik Önlemleri*
+      - Kimlik Doğrulama ve Oturum Yönetiminde Güvenlik
+      - Yaygın Güvenlik Açıkları ve Önleme Yöntemleri
 
-# Güvenlik Önlemleri
-   - Kimlik Doğrulama ve Oturum Yönetiminde Güvenlik
-   - Yaygın Güvenlik Açıkları ve Önleme Yöntemleri
-
-# Uygulama Geliştirme
-   - Rust ile Oturum Yönetimi ve Kimlik Doğrulama
-   - *Framework Seçimi:*
-     - Actix ya da Rocket
-     - *Actix ile Geliştirme:*
-       - Actix Web ile Proje Kurulumu
-       - Actix ile Kimlik Doğrulama Uygulaması
-       - Oturum Yönetimi Uygulaması Geliştirme
-     - *Rocket ile Geliştirme:*
-       - Rocket ile Proje Kurulumu
-       - Rocket ile Kimlik Doğrulama Uygulaması
-       - Oturum Yönetimi Uygulaması Geliştirme
+#### Ornek Uygulama
+   - *Actix ile Geliştirme:*
+      - Actix Web ile Proje Kurulumu
+      - Actix ile Kimlik Doğrulama Uygulaması
+      - Oturum Yönetimi Uygulaması Geliştirme
+   - *Rocket ile Geliştirme:*
+      - Rocket ile Proje Kurulumu
+      - Rocket ile Kimlik Doğrulama Uygulaması
+      - Oturum Yönetimi Uygulaması Geliştirme

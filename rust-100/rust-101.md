@@ -16,33 +16,30 @@ goals:
    - Rust ile küçük programlar geliştirebilecek.
 audiances:
    - Rust ile programlamaya yeni başlayanlar veya farklı dillerden en az birisinde tecrübesi olanlar.
-period: 30
 methodology:
-    - Etkileşimli ders ve tartışmalar.
-    - Pratik alıştırmalar
-    - Odevler
-requirements:
-    - Online toplanti icin gerekli ortam
-    - Rust icin uygun ortam 
+    - 30 saat,
+    - 3'ser saatlik oturumlar ile 5 hafta,
+    - Online ve
+    - Ders saatleri dışında etkileşimli ödevler ve ödev tartışmaları.
 ---
 
-# Dilin Yapısı
+##### Dilin Yapısı
    - Hello, World!  
    - Program akışı ve yapısı  
 
-# Değişkenler ve Veri Tipleri
+##### Değişkenler ve Veri Tipleri
    - Immutable, Mutable  
    - Sabit, Literal  
    - Veri tipleri: Integer, Float, Boolean, Char  
    - String ve &str (*)
    - Shadowing  
 
-# Expression ve Statement
+##### Expression ve Statement
    - Expression  
    - Statement  
    - Blokların ifade olarak değerlendirilmesi  
 
-# Fonksiyonlar
+##### Fonksiyonlar
    - Fonksiyon tanımı  
    - Parametreler ve türleri  
    - Fonksiyon da Expression  
@@ -50,31 +47,31 @@ requirements:
    - Kapsam (Scope) ve Ömür (Lifetime) (*)
    - Closure (*)  
 
-# Ownership ve Borrowing
+##### Ownership ve Borrowing
    - Ownership  
    - Borrowing ve Referanslar  
    - Move Semantics ve Clone (*)
 
-# Struct
+##### Struct
    - Struct tanımı  
    - Tuple ve Field Struct’lar  
    - Struct ile Ownership ilişkisi  
 
-# Enum
+##### Enum
    - Enum tanımı  
    - Enum ile veri yapılandırma  
 
-# Kontrol Yapıları ve Döngüler
+##### Kontrol Yapıları ve Döngüler
    - `if/else`, `match`, `if let`, `while let`  
    - for, while, loop  
    - Döngülerde Iterator kullanımı (*)
 
-# Hata Yönetimi
+#####  Hata Yönetimi
    - Result ve Option türleri  
    - `?` Operatörü ile Hata Yönetimi  
    - `panic!` (*)
 
-# Veri Yapıları
+##### Veri Yapıları
    - Tuple ve Destructuring  
    - Array  
    - `Vec<T>` (*)
