@@ -7,8 +7,8 @@ category: coursemain
 permalink: /Rust-300/
 sortorder: 300
 documentstate: 0
-excerpt: Katılımcıların en yaygın ve sık kullanılan backend bileşenlerini anlamalarini ve uygulamalarinda kullanabilmelerini saglamak icin hazirlanmistir.
+excerpt: Katılımcılara Rust ile modern frontend, web ve mobil uygulama geliştirme becerilerini kazandırmayı amaçlar. 
+info: >- 
+    Bu kapsamlı eğitim seti, katılımcılara Rust ile etkileşimli, yüksek performanslı ve güvenli uygulamalar geliştirme yeteneklerini kazandırırken, pratik uygulamalarla zenginleştirilmiş bir deneyim sunmayı hedeflemektedir.
 ---
 
-
-Rust 200 Page aciklama yaz

@@ -1,58 +1,71 @@
 ---
 layout: course
 topic: rust-200
-title: Rust ile gRPC
-subject: Rust Backend
 subject_permalink: /rust-200/
 permalink: /Rust-204/
 sortorder: 400
 documentstate: 1
+subject: Rust Backend
+title: Rust ile gRPC Uygulamaları
 excerpt: >-
-   gRPC ve Protobuf ile sistemler arasında hızlı, güvenli ve verimli iletişim sağlamak için tasarlanmış bir kurstur.
+   Bu kurs, gRPC ve Protobuf kullanarak sistemler arasında hızlı, güvenli ve verimli iletişim kurmayı hedefleyen bir programdır. 
 overview: >-
-   Google tarafından geliştirilen bu açık kaynak protokol gRPC (Google Remote Procedure Call), sistemler arasında yüksek performanslı, esnek ve güvenilir iletişim sağlamayı hedefler.
-   Bu kurs, Rust ile gRPC'nin avantajlarını ve kullanımını kapsamaktadır. Streaming özellikleri ve REST ile entegrasyonu ele alınırken, Protobuf ile veri modelleme de önemli bir konu olarak işlenmektedir. Rust dilinin güçlü yönleriyle gRPC uygulamalarını nasıl geliştirebileceğinizi öğreneceksiniz.
+   Rust dilinin güçlü yanları ile gRPC uygulamaları geliştirmeyi ve streaming yöntemleriyle REST entegrasyonunu sağlamayı öğrenmek isteyen yazılımcılara yöneliktir. <br/>
+   gRPC, sistemler arasında yüksek performanslı ve esnek iletişim sağlamayı amaçlayan bir açık kaynak protokolüdür. Bu kurs, Rust kullanarak gRPC’nin avantajlarını, Protobuf ile veri modelleme yöntemlerini ve streaming işlemlerini öğretir. REST entegrasyonu ve kimlik doğrulama konularına da odaklanarak, katılımcıların **gerçek dünyada uygulanabilir** projeler geliştirmelerini amaçlar.
 audiances:
-   - Performans odaklı uygulama geliştiren yazılımcılar
-   - Büyük veri ve yüksek trafikli uygulamalar üzerinde çalışan Rust geliştiricileri
+- Performans odaklı uygulama geliştiren yazılımcılar  
+- Büyük veri veya yüksek trafikli uygulamalarda çalışan Rust geliştiricileri  
+- Mikroservis mimarisi ve dağıtık sistemler üzerinde çalışan yazılımcılar
 goals:
-  - gRPC’nin avantajlarını anlayacak,
-  - Rust kullanarak Protobuf ile veri modelleme yapacak,
-  - Streaming yöntemlerini Rust ile uygulayacak,
-  - gRPC kimlik doğrulama mekanizmalarını uygulayacaktir.
+   - gRPC'nin avantajlarını ve dezavantajlarını anlayacak  
+   - Protobuf ile veri modelleme yapacak  
+   - Streaming** yöntemlerini uygulamayı öğrenecek  
+   - Kimlik doğrulama ve güvenlik mekanizmalarını gerçekleştirecek  
+   - gRPC ve REST API entegrasyonu yapacaktır  
 methodology:
-   - 30 saat,
-   - 3'ser saatlik oturumlar ile 5 hafta,
-   - Online ve
-   - Ders saatleri dışında etkileşimli ödevler ve ödev tartışmaları.
+- 18 saat  
+- 3 hafta boyunca 3’er saatlik oturumlar
+- Kurslar Online yapılacak  
+- Ders saatleri dışında, ödevler ve proje bazlı tartışma oturumları
 ---
 
-#### gRPC Nedir?
-   - gRPC mimarisi ve temel bileşenler
-   - gRPC’nin avantajları
+##### gRPC Nedir?
+- gRPC'nin Mimarisi ve Temel Bileşenleri  
+- gRPC’nin Avantajları ve Dezavantajları  
+- Hangi senaryolarda gRPC kullanılmalı?  
 
-#### gRPC ve REST Farkları
-   - gRPC ve REST arasındaki temel farklar
-   - Rust ile REST API'lerinin gRPC ile entegrasyonu
+##### Protobuf ile Veri Yapıları
+- Protobuf Nedir ve Nasıl Çalışır?  
+- *prost* ile Protobuf Kullanımı
+- Protobuf Dosyası Yazma ve Derleme  
+- Protobuf’un Performans Avantajları  
 
-#### Protobuf ile Veri Yapıları
-   - Protobuf nedir ve nasıl çalışır?
-   - Rust ile Protobuf kullanımı (prost kütüphanesi)
-   - Protobuf dosyası yazma ve derleme
+##### gRPC ve REST Farkları ve Entegrasyonu
+- Rust ile REST API’lerinin gRPC ile Entegrasyonu  
+- *gRPC Gateway* Kullanımı  
+- REST ve gRPC Arasındaki Veri Dönüşüm Stratejileri  
 
-#### Streaming
-   - Streaming yöntemleri:
-     - Unary
-     - Server-streaming
-     - Client-streaming
-     - Bidi-streaming
-   - Rust ile streaming uygulamaları geliştirme (tonic kütüphanesi)
+##### Streaming Yöntemleri
+- gRPC’de *Streaming Türleri*
+  - Unary  
+  - Server-streaming  
+  - Client-streaming  
+  - Bi-directional (Bidi) streaming  
+- *tonic* Streaming Uygulamalarının Geliştirilmesi
 
-#### gRPC Kimlik Doğrulama
-   - gRPC'de kimlik doğrulama yöntemleri(*)
-   - Token tabanlı kimlik doğrulama uygulamaları(*)
-   - Rust ile kimlik doğrulama mekanizmalarının uygulanması(*)
+##### Kimlik Doğrulama ve Güvenlik
+- gRPC’de *Kimlik Doğrulama Yöntemleri*
+- TLS ve Şifreleme ile Güvenlik Sağlama  
+- gRPC Güvenlik Mekanizmalarının Uygulanması  
 
-#### REST ile Entegrasyon
-   - gRPC Gateway kullanımı
-   - Rust ile REST ve gRPC entegrasyonu sağlama yöntemleri
+##### Hata Yönetimi ve Performans
+- *Status ve tonic* ile Hata Yönetimi 
+- Retry ve Fallback Mekanizmaları  
+- Rust ile Asenkron Programlama ve Concurrency  (*)
+- Performans İyileştirme Teknikleri 
+   - Bağlantı havuzu
+   - Protobuf optimizasyonları
+
+
+
+Rust ile Asenkron Programlama ve Concurrency, konu basligi Resut Temel Programlama serisinde birer kurs olarak hazirlanmistir. Bu bolumde giris seviyesinde bilgi ve ornekler verilecektir.

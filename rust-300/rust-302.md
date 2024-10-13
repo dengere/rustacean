@@ -1,9 +1,12 @@
 ---
 layout: course
 topic: rust-300
-title: Rust ile Android App Gelistirme
+title: Mobil Uygulama Geliştirme
 permalink: /Rust-302/
-excerpt: Bastigin yer saglam olsun, güvenle adım at. XXX
+subject: Rust Frontend
+subject_permalink: /rust-300/
+excerpt: >-
+    Bu kurs, Rust'ı mobil platformlarda kullanmanın yollarını öğretir. Katılımcılar, mobil uygulama geliştirme süreçlerini öğrenerek Rust'ın performansını ve verimliliğini mobil ortamlara entegre etmeyi öğrenirler.
 sortorder: 200
 documentstate: 0
 ---
